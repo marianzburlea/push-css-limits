@@ -8,8 +8,12 @@
     perspective: 500px;
     display: inline-block;
     cursor: pointer;
-    margin-left: 53rem;
+    margin-left: 23rem;
     margin-top: 1rem;
+
+    &:focus {
+      border: 2px solid rgba(213, 32, 39, 0.5)
+    }
 
     &:first-child {
       margin-top: 35rem;
@@ -48,24 +52,26 @@
     animation-duration: 5s;
     animation-direction: alternate;
     animation-iteration-count: infinite;
+    pointer-events: none;
   }
 
   &__foreground {
     position: relative;
+    display: flex;
     border: 0;
     background: transparent;
-    padding: 1rem 3rem 1rem 4rem;
+    padding: 2rem 6rem 2rem 6rem;
     color: white;
     pointer-events: none;
-    font-size: 6rem;
+    font-size: 5rem;
   }
 }
 
 @keyframes nice {
   0% {
-    transform: translate(4%, 0) rotate3d(0.4, 0.9, 0, -5deg);
+    transform: translate(4%, 0) rotate3d(0.4, 0.9, 0, -3deg);
   }
   100% {
-    transform: translate(5%, 0) rotate3d(0.2, 0.9, 0, 9deg);
+    transform: translate(5%, 0) rotate3d(0.2, 0.9, 0, 2deg);
   }
 }

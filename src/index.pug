@@ -3,7 +3,14 @@ extends _component/layout/base
 block awesome-content
   .button__wrapper
     .button__background
-    button.button__foreground Marian Zburlea
+    label.button__foreground(
+      tabindex="1"
+      for="nice-input-1"
+    ) Marian Zburlea
+
   .button__wrapper
     .button__background
-    button.button__foreground Senior Front End Developer!
+    label.button__foreground(
+      tabindex="1"
+      for="nice-input-2"
+    ) Senior Front End Developer!

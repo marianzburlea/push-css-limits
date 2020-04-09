@@ -17,3 +17,22 @@ body {
   // background-color: rgba(255, 255, 255, 0.9);
   border-radius: 1rem;
 }
+
+// why do we push CSS limits?
+
+// let's be a bit crazy about it!
+a {
+  color: black;
+
+}
+
+p > a > span {
+  color: lightcoral;
+  border: 0;
+  border-radius: 50%;
+}
+
+p > a > span {
+  background-color: lightcyan;
+  border: 2px solid yellowgreen;
+}
