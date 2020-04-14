@@ -1,0 +1,37 @@
+#left
+  nav.menu
+    input(
+      type="radio"
+      id="menu-item-left-reset"
+      class="menu__el-meniosos"
+      name="left"
+    )
+    each menu, key in data.menu.pointList
+      input(
+        type="radio"
+        id=`menu-item-left-${key}`
+        class="menu__el-meniosos"
+        name="left"
+      )
+      label(for=`menu-item-left-${key}`)=menu
+
+  label(for="menu-item-left-reset").menu-title=data.menu.title
+
+#right
+  nav.menu
+    input(
+      type="radio"
+      id="menu-item-right-reset"
+      class="menu__el-meniosos"
+      name="right"
+    )
+    each menu, key in data.menu.pointList
+      input(
+        type="radio"
+        id=`menu-item-right-${key}`
+        class="menu__el-meniosos"
+        name="right"
+      )
+      label(for=`menu-item-right-${key}`)=menu
+
+  label(for="menu-item-right-reset").menu-title=data.menu.title

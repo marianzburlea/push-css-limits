@@ -1,16 +1,18 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap');
 html,
 body {
   height: 100%;
   margin: 0;
   padding: 0;
+  font-family: 'Roboto', sans-serif;
 }
 body {
   // background-image: url(#{$baseUrl}asset/image/become-a-web-developer-today.jpg);
   background-size: cover;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
+  // display: flex;
+  // justify-content: flex-end;
+  // align-items: flex-start;
+  // flex-direction: column;
 }
 .content {
   padding: 1rem;

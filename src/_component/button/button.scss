@@ -1,0 +1,74 @@
+.button {
+  &__wrapper {
+    font-family: arial;
+    position: relative;
+    perspective: 500px;
+    display: inline-block;
+    cursor: pointer;
+    margin-left: 23rem;
+    margin-top: 1rem;
+
+    &:focus {
+      border: 2px solid rgba(213, 32, 39, 0.5)
+    }
+
+    &:first-child {
+      margin-top: 35rem;
+      // transform: rotateZ(1.5deg);
+      perspective: 400px;
+    }
+  }
+
+  &__wrapper:nth-child(2) &__background {
+    animation-delay: 2s;
+    background-color: rgba(213, 32, 39, 0.75);
+  }
+  &__wrapper:nth-child(2) &__background {
+    animation-delay: 2s;
+    background-color: rgba(213, 32, 39, 0.75);
+  }
+
+  &__wrapper:nth-child(2) {
+    perspective: 700px;
+    transform: rotateZ(-5deg);
+    margin-top: 2rem;
+  }
+
+  &__background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(213, 32, 168, 0.85);
+    border-radius: 2rem;
+    transform: translate(4%, 0) rotate3d(0.3, 0.9, 0, 11deg);
+    transform-origin: 30% 70%;
+    box-shadow: 3px 2px 0 rgba(0, 0, 0, 0.25);
+    animation-name: nice;
+    animation-duration: 5s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    pointer-events: none;
+  }
+
+  &__foreground {
+    position: relative;
+    display: flex;
+    border: 0;
+    background: transparent;
+    padding: 2rem 6rem 2rem 6rem;
+    color: white;
+    pointer-events: none;
+    font-size: 5rem;
+  }
+}
+
+@keyframes nice {
+  0% {
+    transform: translate(4%, 0) rotate3d(0.4, 0.9, 0, -3deg);
+  }
+  100% {
+    transform: translate(5%, 0) rotate3d(0.2, 0.9, 0, 2deg);
+  }
+}

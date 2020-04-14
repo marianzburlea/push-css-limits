@@ -1,16 +1,5 @@
 extends _component/layout/base
 
 block awesome-content
-  .button__wrapper
-    .button__background
-    label.button__foreground(
-      tabindex="1"
-      for="nice-input-1"
-    ) Marian Zburlea
-
-  .button__wrapper
-    .button__background
-    label.button__foreground(
-      tabindex="1"
-      for="nice-input-2"
-    ) Senior Front End Developer!
+  include _component/menu/menu
+  //- include _component/button/button
